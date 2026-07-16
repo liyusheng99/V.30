@@ -187,7 +187,7 @@ a{color:inherit;text-decoration:none}
 <section id="home" class="relative h-screen overflow-hidden" style="background:#0a0a0a">
   
   <div id="heroVideoContainer"></div>
-  <script>(function(){if(window.matchMedia("(hover: hover) and (pointer: fine)").matches){var c=document.getElementById("heroVideoContainer"),v=document.createElement("video");v.id="heroVideo";v.className="absolute inset-0 w-full h-full object-cover";v.autoplay=true;v.muted=true;v.loop=true;v.playsInline=true;v.preload="auto";var s1=document.createElement("source");s1.src="hero-bg.mp4";s1.type="video/mp4";v.appendChild(s1);var s2=document.createElement("source");s2.src="hero2-bg.mp4";s2.type="video/mp4";v.appendChild(s2);c.appendChild(v);v.play().catch(function(){});document.addEventListener("touchstart",function(){v.play().catch(function(){})},{once:true})}})();</script>
+  <script>(function(){if(window.matchMedia("(hover: hover) and (pointer: fine)").matches){var c=document.getElementById("heroVideoContainer"),v=document.createElement("video");v.id="heroVideo";v.className="absolute inset-0 w-full h-full object-cover";v.autoplay=true;v.muted=true;v.loop=true;v.playsInline=true;v.preload="auto";var s2=document.createElement("source");s2.src="hero2-bg.mp4";s2.type="video/mp4";v.appendChild(s2);c.appendChild(v);v.play().catch(function(){});document.addEventListener("touchstart",function(){v.play().catch(function(){})},{once:true})}})();</script>
   <div class="absolute inset-0" style="background:rgba(0,0,0,0.4);-webkit-mask:linear-gradient(to top,black 0%,transparent 45%);mask:linear-gradient(to top,black 0%,transparent 45%)"></div>
   <div class="absolute inset-0 pointer-events-none" style="background:linear-gradient(to top,rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.2) 40%,transparent 60%);z-index:5"></div>
   <div class="relative flex flex-col justify-end h-full" style="z-index:10">
@@ -978,6 +978,7 @@ imgs.forEach(function(img){img.src=img.getAttribute('data-hd');img.removeAttribu
 </script>
 </body>
 </html>
+
 
 
 
