@@ -4,7 +4,7 @@
   "private": true,
   "description": "个人设计作品集 - 游戏视觉设计师 / AI设计师",
   "scripts": {
-    "build": "mkdir -p dist && cp -r index.html hero-bg-jpg.jpg hero2-bg.mp4 .nojekyll _headers fonts mobile-img dist/",
+    "build": "mkdir -p dist && cp -r index.html hero-bg-jpg.webp hero2-bg.mp4 .nojekyll _headers fonts mobile-img dist/",
     "dev": "npx serve . -l 5174 --no-clipboard",
     "start": "npx serve . -l 5174 --no-clipboard"
   },
