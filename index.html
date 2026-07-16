@@ -7,7 +7,9 @@
   <meta charset="UTF-8" /><meta http-equiv="Cache-Control" content="public, max-age=86400" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>李育昇 · 游戏视觉设计师 / AI设计师</title>
-            <script src="https://cdn.tailwindcss.com?v=2" defer></script>
+      <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <script src="https://cdn.tailwindcss.com?v=2"></script>
   <style>
 .sm\:hidden{display:none !important}
 @media(min-width:640px){.sm\:hidden{display:none !important}}
@@ -33,7 +35,7 @@
 }</style><script>tailwind.config={theme:{extend:{maxWidth:{content:"1700px"}}}}</script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box;}
-    html,body{background:#000;color:#fff;font-family:"Inter","system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif",sans-serif;scroll-behavior:smooth;}
+    html,body{background:#000;color:#fff;font-family:"Inter","Noto Sans SC",sans-serif;scroll-behavior:smooth;}
     .liquid-glass{position:relative;overflow:hidden;background:rgba(255,255,255,0.01);background-blend-mode:luminosity;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:none;box-shadow:inset 0 1px 1px rgba(255,255,255,0.1);}
     .liquid-glass::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,0.45) 0%,rgba(255,255,255,0.15) 20%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 60%,rgba(255,255,255,0.15) 80%,rgba(255,255,255,0.45) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;}
     @font-face { font-family: "SuperMario85"; src: url("fonts/SuperMario85.ttf") format("truetype"); font-display: swap; }
@@ -55,7 +57,7 @@
   
     [id^="p2-row-"],[id^="p3-row-"]::-webkit-scrollbar{display:none}[id^="p2-row-"],[id^="p3-row-"]{-ms-overflow-style:none;scrollbar-width:none}
     [id^="p2-row-"],[id^="p3-row-"]::-webkit-scrollbar{display:none}[id^="p2-row-"],[id^="p3-row-"]{-ms-overflow-style:none;scrollbar-width:none}.p2-arrow{pointer-events:auto}.scroll-row-wrapper:hover .p2-arrow{opacity:1!important}
-    .lightbox-overlay{position:fixed!important;inset:0;z-index:9999!important;background:rgba(0,0,0,0.92);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.3s ease}.lightbox-overlay.active{opacity:1!important;pointer-events:auto!important}.lightbox-overlay img{max-width:85vw;max-height:85vh;border-radius:20px;object-fit:contain;transform:scale(0.9);transition:transform 0.35s ease}.lightbox-overlay.active img{transform:scale(1)}.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);border:none;color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.2s;z-index:10}.lb-nav:hover{background:rgba(255,255,255,0.18)}.lb-prev{left:8px}.lb-next{right:8px}.lb-close{position:absolute;top:12px;right:14px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);border:none;color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.2s;z-index:10}.lb-close:hover{background:rgba(255,255,255,0.18)}.lb-counter{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,0.4);font-size:12px;letter-spacing:0.1em;font-family:sans-serif;z-index:10}
+    .lightbox-overlay{position:fixed!important;inset:0;z-index:9999!important;background:rgba(0,0,0,0.92);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.3s ease}.lightbox-overlay.active{opacity:1!important;pointer-events:auto!important}.lightbox-overlay img{max-width:85vw;max-height:85vh;border-radius:20px;object-fit:contain;transform:scale(0.9);transition:transform 0.35s ease}.lightbox-overlay.active img{transform:scale(1)}.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);border:none;color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.2s;z-index:10}.lb-nav:hover{background:rgba(255,255,255,0.18)}.lb-prev{left:8px}.lb-next{right:8px}.lb-close{position:absolute;top:12px;right:14px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);border:none;color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.2s;z-index:10}.lb-close:hover{background:rgba(255,255,255,0.18)}.lb-counter{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,0.4);font-size:12px;letter-spacing:0.1em;font-family:'Inter',sans-serif;z-index:10}
     .js-ready .anim-active{animation:blurFadeUp 0.5s ease-out forwards}
     /* Dropdown hover bridge - prevent disappearing */
     .dropdown-wrapper { position: relative; }
@@ -122,7 +124,7 @@
 <style>
 /* Critical layout - loads immediately */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html,body{background:#000;color:#fff;font-family:"Inter","system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif",sans-serif;scroll-behavior:smooth}
+html,body{background:#000;color:#fff;font-family:"Inter","Noto Sans SC",sans-serif;scroll-behavior:smooth}
 img{max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
 ::-webkit-scrollbar{width:4px}
@@ -975,6 +977,7 @@ imgs.forEach(function(img){img.src=img.getAttribute('data-hd');img.removeAttribu
 </script>
 </body>
 </html>
+
 
 
 
