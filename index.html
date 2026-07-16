@@ -1,0 +1,1028 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="preload" href="mobile-img/hero-title.webp" as="image" />
+<link rel="preload" href="hero-bg-jpg.webp" as="image" />
+
+  <meta charset="UTF-8" /><meta http-equiv="Cache-Control" content="public, max-age=86400" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>李育昇 · 游戏视觉设计师 / AI设计师</title>
+            <script src="https://cdn.tailwindcss.com?v=2" ></script>
+  <style>
+.sm\:hidden{display:none !important}
+@media(min-width:640px){.sm\:hidden{display:none !important}}
+@media(max-width:639px){.hidden{display:none !important}}
+@media(min-width:640px){.sm\:flex{display:flex !important}}
+.fixed{position:fixed}.relative{position:relative}.absolute{position:absolute}.inset-0{top:0;right:0;bottom:0;left:0}
+.w-full{width:100%}.h-screen{height:100vh}.h-full{height:100%}
+.object-cover{object-fit:cover}
+.flex{display:flex}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}
+.items-center{align-items:center}.items-end{align-items:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.mx-auto{margin-left:auto;margin-right:auto}
+.font-bold{font-weight:700}.font-black{font-weight:900}
+.text-white{color:#fff}.text-white\/50{color:rgba(255,255,255,0.5)}.text-white\/60{color:rgba(255,255,255,0.6)}.text-white\/80{color:rgba(255,255,255,0.8)}.text-white\/90{color:rgba(255,255,255,0.9)}.text-gray-400{color:#9ca3af}.text-gray-500{color:#6b7280}
+.overflow-hidden{overflow:hidden}.z-50{z-index:50}.z-10{z-index:10}.z-5{z-index:5}
+.pointer-events-none{pointer-events:none}
+.transition-all{transition-property:all}.duration-500{transition-duration:500ms}
+.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.tracking-wide{letter-spacing:0.025em}
+.bg-black{background-color:#000}.border-b{border-bottom-width:1px}.rounded-full{border-radius:9999px}
+@media(min-width:640px){.sm\:text-sm{font-size:.875rem}.sm\:text-base{font-size:1rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}
+
+/* Desktop: video / Mobile: GIF background */
+@media (hover: none) and (pointer: coarse) {
+  #home { background-image: url(hero-bg-jpg.webp) !important; background-size: cover !important; background-position: center !important; }
+}</style><script>tailwind.config={theme:{extend:{maxWidth:{content:"1700px"}}}}</script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html,body{background:#000;color:#fff;font-family:"Inter","system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif",sans-serif;scroll-behavior:smooth;}
+    .liquid-glass{position:relative;overflow:hidden;background:rgba(255,255,255,0.01);background-blend-mode:luminosity;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:none;box-shadow:inset 0 1px 1px rgba(255,255,255,0.1);}
+    .liquid-glass::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,0.45) 0%,rgba(255,255,255,0.15) 20%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 60%,rgba(255,255,255,0.15) 80%,rgba(255,255,255,0.45) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;}
+    @font-face { font-family: "SuperMario85"; src: url("fonts/SuperMario85.ttf") format("truetype"); font-display: swap; }
+    @keyframes grainMove { 0%,100% { transform: translate(0,0); } 25% { transform: translate(-5px,5px); } 50% { transform: translate(5px,-5px); } 75% { transform: translate(-3px,-3px); } }
+    @keyframes blurFadeUp{from{opacity:0;transform:translateY(15px);}to{opacity:1;transform:translateY(0);}}
+    .animate-blur-fade-up{opacity:0;transform:translateY(15px);}.animate-blur-fade-up.anim-active{animation:blurFadeUp 0.5s ease-out forwards;}
+    ::-webkit-scrollbar{width:4px;}
+    ::-webkit-scrollbar-track{background:#000;}
+    ::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:2px;}
+    .nav-link:hover .nav-underline{width:100%!important;}
+    .nav-link:hover{color:#ff8c00!important;}
+    .nav-link.active .nav-underline{width:100%!important;}
+    .nav-link.active{color:#ff8c00!important;}
+    .hero-title { position: relative; font-family: "SuperMario85","Impact",sans-serif; font-weight: 400; letter-spacing: 0.04em; line-height: 1.0; text-align: center; color: #fff; margin: 0; padding: 0; -webkit-text-stroke: 3px #000; text-stroke: 3px #000; }
+    .hero-title::before { content: attr(data-text); position: absolute; top: 4px; left: 4px; color: #000; -webkit-text-stroke: 0; text-stroke: 0; z-index: -1; pointer-events: none; white-space: nowrap; }
+    .hl-yellow { color: #F5C842; -webkit-text-stroke: 3px #000; text-stroke: 3px #000; text-shadow: 0 0 15px rgba(245,200,66,0.2); }
+    .hero-btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.7rem 2rem; border: 1.5px solid rgba(255,255,255,0.35); border-radius: 0.5rem; color: rgba(255,255,255,0.85); font-family: "Inter",sans-serif; font-size: clamp(0.75rem,1.1vw,0.9rem); font-weight: 700; letter-spacing: 0.1em; text-decoration: none; transition: all 0.3s ease; background: transparent; }
+    .hero-btn:hover { border-color: rgba(255,255,255,0.7); color: #fff; transform: translateY(-2px); }
+  
+    [id^="p2-row-"],[id^="p3-row-"]::-webkit-scrollbar{display:none}[id^="p2-row-"],[id^="p3-row-"]{-ms-overflow-style:none;scrollbar-width:none}
+    [id^="p2-row-"],[id^="p3-row-"]::-webkit-scrollbar{display:none}[id^="p2-row-"],[id^="p3-row-"]{-ms-overflow-style:none;scrollbar-width:none}.p2-arrow{pointer-events:auto}.scroll-row-wrapper:hover .p2-arrow{opacity:1!important}
+    .lightbox-overlay{position:fixed!important;inset:0;z-index:9999!important;background:rgba(0,0,0,0.92);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.3s ease}.lightbox-overlay.active{opacity:1!important;pointer-events:auto!important}.lightbox-overlay img{max-width:85vw;max-height:85vh;border-radius:20px;object-fit:contain;transform:scale(0.9);transition:transform 0.35s ease}.lightbox-overlay.active img{transform:scale(1)}.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);border:none;color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.2s;z-index:10}.lb-nav:hover{background:rgba(255,255,255,0.18)}.lb-prev{left:8px}.lb-next{right:8px}.lb-close{position:absolute;top:12px;right:14px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);border:none;color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.2s;z-index:10}.lb-close:hover{background:rgba(255,255,255,0.18)}.lb-counter{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,0.4);font-size:12px;letter-spacing:0.1em;font-family:sans-serif;z-index:10}
+    .js-ready .anim-active{animation:blurFadeUp 0.5s ease-out forwards}
+    /* Dropdown hover bridge - prevent disappearing */
+    .dropdown-wrapper { position: relative; }
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 0;
+      padding-top: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s ease, visibility 0.2s ease;
+      pointer-events: none;
+      z-index: 100;
+    }
+    .dropdown-menu.show {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .dropdown-menu-inner {
+      background: rgba(10,10,15,0.12);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-left: 1px solid rgba(255,255,255,0.04);
+      border-right: 1px solid rgba(255,255,255,0.04);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      border-top: none;
+      border-radius: 0 0 12px 12px;
+      padding: 6px 0 8px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    }
+    .dropdown-menu-inner a {
+      display: block;
+      padding: 8px 20px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .dropdown-menu-inner a:hover {
+      color: #ff8c00;
+      background: rgba(255,255,255,0.03);
+    }
+    .scroll-mask { overflow: hidden; }
+    .scroll-track { display: flex; flex-wrap: nowrap; will-change: transform; backface-visibility: hidden; -webkit-backface-visibility: hidden; perspective: 1000px; }
+    .lb-img { cursor: pointer; }
+    .lb-img:hover { opacity: 0.85; transition: opacity 0.3s; }
+    .rounded-\[20px\]{box-shadow:inset 0 0 0 1px #000}
+    /* ===== Edge 兼容修复 ===== */
+    .guanggao-card { scroll-snap-align:start; min-width: 200px; transform: translateZ(0); -webkit-transform: translateZ(0); backface-visibility: hidden; -webkit-backface-visibility: hidden; isolation: isolate; overflow: hidden; border-radius: 12px; background: #000; }
+    .guanggao-card img { display: block !important; width: 100% !important; height: 100% !important; object-fit: cover !important; isolation: isolate;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    @media (min-width: 640px) {
+      .guanggao-card { min-width: 200px; transform: translateZ(0); -webkit-transform: translateZ(0); border-radius: 16px; }
+    }</style><style>
+  
+<style>
+/* Critical layout - loads immediately */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#000;color:#fff;font-family:"Inter","system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif",sans-serif;scroll-behavior:smooth}
+img{max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:#000}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:2px}
+.fixed{position:fixed}.relative{position:relative}.absolute{position:absolute}.inset-0{top:0;right:0;bottom:0;left:0}
+.w-full{width:100%}.h-screen{height:100vh}.h-full{height:100%}
+.flex{display:flex}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}
+.font-bold{font-weight:700}.font-black{font-weight:900}
+.text-white{color:#fff}.overflow-hidden{overflow:hidden}
+.z-50{z-index:50}.z-10{z-index:10}.pointer-events-none{pointer-events:none}
+.object-cover{object-fit:cover}.mx-auto{margin-left:auto;margin-right:auto}
+.bg-black{background-color:#000}.leading-none{line-height:1}.tracking-wide{letter-spacing:0.025em}
+.top-0{top:0}.left-0{left:0}.bottom-0{bottom:0}
+@media(min-width:640px){.sm\\:hidden{display:none!important}.sm\\:text-sm{font-size:.875rem}.sm\\:text-base{font-size:1rem}}
+@media(max-width:639px){.hidden{display:none!important}}
+@media(min-width:640px){.sm\\:flex{display:flex!important}}
+@media(min-width:640px){.sm\\:px-6{padding-left:1.5rem;padding-right:1.5rem}}
+.icon-round{box-shadow:inset 0 0 0 1px #000}
+/* Icon rounded container - prevent gray anti-alias edges */
+#p2-row-icon .shrink-0{box-shadow:inset 0 0 0 1.5px #000;}
+</style></head>
+<body>
+<script>document.body.classList.add("js-ready");function forceEls(){document.querySelectorAll(".animate-blur-fade-up:not(.anim-active)").forEach(function(e){e.style.opacity="1";e.style.transform="translateY(0)"})}function triggerVisible(){document.querySelectorAll(".animate-blur-fade-up:not(.anim-active)").forEach(function(e){var d=e.getAttribute("data-delay");if(d)e.style.animationDelay=d;e.classList.add("anim-active")})}document.addEventListener("DOMContentLoaded",function(){triggerVisible();var raf=window.requestAnimationFrame||window.webkitRequestAnimationFrame||function(f){setTimeout(f,16)};raf(function(){raf(triggerVisible)})});setTimeout(forceEls,1500);</script>
+<noscript><style>.animate-blur-fade-up{opacity:1!important;filter:blur(0)!important;transform:translateY(0)!important}    .section-bg { position: relative; background-color: #000; }
+    .section-bg > * { position: relative; z-index: 2; }
+    /* Edge cursor fix */
+    svg, .hero-title, .hero-title::before, .hl-yellow, h1, h2, h3, p, span { cursor: default; }
+    .grain-overlay { position: fixed; inset: 0; pointer-events: none; z-index: 4; opacity: 0.35; mix-blend-mode: overlay; background-image: url("data:image/svg+xml,%3Csvg viewBox=%220 0 256 256%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%224%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22/%3E%3C/svg%3E"); background-repeat: repeat; background-size: 256px 256px; animation: grainMove 0.5s steps(4) infinite; }
+    </style></noscript>
+<nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500" style="background:rgba(10,10,15,0.6);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,0.06)">
+  <div class="max-w-content mx-auto px-4 sm:px-6 md:px-12">
+    <div class="flex items-center justify-between h-14 sm:h-16">
+      <div class="flex items-center justify-center gap-0.5 sm:gap-1 md:gap-2 mx-auto">
+        <a href="#home" class="nav-link relative font-bold text-xs sm:text-sm md:text-base px-1 sm:px-2 md:px-4 py-1.5" data-target="home" style="color:#ffffff;text-decoration:none;transition:color 250ms ease-out">首页<span class="nav-underline absolute left-0 bottom-0 h-[1.5px] rounded-full" style="width:0;background:#ff8c00;transition:width 250ms ease-out"></span></a>
+        <div class="relative dropdown-wrapper flex items-center"><a href="#experience" class="nav-link relative font-bold text-xs sm:text-sm md:text-base px-1 sm:px-2 md:px-4 py-1.5" data-target="experience" style="color:#ffffff;text-decoration:none;transition:color 250ms ease-out" onmouseenter="showDropdown(this)" onmouseleave="hideDropdown(this)">工作经历</a><div class="dropdown-menu" onmouseenter="showDropdown(this.parentNode.querySelector('a'))" onmouseleave="hideDropdown(this.parentNode.querySelector('a'))"><div class="dropdown-menu-inner"><a href="#exp-project">项目经验</a><a href="#exp-work">工作经历</a></div></div></div>
+        <div class="relative dropdown-wrapper flex items-center"><a href="#projects" class="nav-link relative font-bold text-xs sm:text-sm md:text-base px-1 sm:px-2 md:px-4 py-1.5" data-target="projects" style="color:#ffffff;text-decoration:none;transition:color 250ms ease-out" onmouseenter="showDropdown(this)" onmouseleave="hideDropdown(this)">作品案例</a><div class="dropdown-menu" onmouseenter="showDropdown(this.parentNode.querySelector('a'))" onmouseleave="hideDropdown(this.parentNode.querySelector('a'))"><div class="dropdown-menu-inner"><a href="#proj-icon">ICON 设计</a><a href="#proj-wutu">商店五图</a><a href="#proj-luodiye">落地页展示</a><a href="#proj-guanggao">广告素材展示</a></div></div></div>
+        
+        <a href="#contact" class="nav-link relative font-bold text-xs sm:text-sm md:text-base px-1 sm:px-2 md:px-4 py-1.5" data-target="contact" style="color:#ffffff;text-decoration:none;transition:color 250ms ease-out">关于我<span class="nav-underline absolute left-0 bottom-0 h-[1.5px] rounded-full" style="width:0;background:#ff8c00;transition:width 250ms ease-out"></span></a>
+      </div>
+      <button class="sm:hidden w-9 h-9 rounded-full flex items-center justify-center" style="background:transparent;color:#ffffff" onclick="toggleMobile()" id="navHamBtn">
+        <svg id="hamOpen" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="hamClose" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobMenu" style="display:none">
+      <div class="px-4 py-3" style="background:#000000;border-bottom:1px solid rgba(255,255,255,0.04)">
+        <div class="flex flex-col gap-1">
+          <a href="#home" class="nav-link font-bold text-sm px-3 py-2.5 rounded-lg" data-target="home" style="color:#ffffff" onclick="closeMobile()">首页</a>
+          <a href="#experience" class="nav-link font-bold text-sm px-3 py-2.5 rounded-lg" data-target="experience" style="color:#ffffff" onclick="closeMobile()">工作经历</a>
+          <a href="#projects" class="nav-link font-bold text-sm px-3 py-2.5 rounded-lg" data-target="projects" style="color:#ffffff" onclick="closeMobile()">作品案例</a>
+          <a href="#projects" class="nav-link font-bold text-sm px-3 py-2.5 rounded-lg" data-target="projects" style="color:#ffffff" onclick="closeMobile()">作品案例</a>
+          <a href="#contact" class="nav-link font-bold text-sm px-3 py-2.5 rounded-lg" data-target="contact" style="color:#ffffff" onclick="closeMobile()">关于我</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<section id="home" class="relative h-screen overflow-hidden" style="background:#0a0a0a">
+  
+  <div id="heroVideoContainer"></div>
+  <script>(function(){if(window.matchMedia("(hover: hover) and (pointer: fine)").matches){var c=document.getElementById("heroVideoContainer"),v=document.createElement("video");v.id="heroVideo";v.className="absolute inset-0 w-full h-full object-cover";v.autoplay=true;v.muted=true;v.loop=true;v.playsInline=true;v.preload="none";var s2=document.createElement("source");s2.src="hero2-bg.mp4";s2.type="video/mp4";v.appendChild(s2);c.appendChild(v);v.play().catch(function(){});document.addEventListener("touchstart",function(){v.play().catch(function(){})},{once:true})}})();</script>
+  <div class="absolute inset-0" style="background:rgba(0,0,0,0.4);-webkit-mask:linear-gradient(to top,black 0%,transparent 45%);mask:linear-gradient(to top,black 0%,transparent 45%)"></div>
+  <div class="absolute inset-0 pointer-events-none" style="background:linear-gradient(to top,rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.2) 40%,transparent 60%);z-index:5"></div>
+  <div class="relative flex flex-col justify-end h-full" style="z-index:10">
+    <div class="max-w-content mx-auto w-full px-4 sm:px-6 md:px-12 pb-12 md:pb-20">
+      <div class="flex flex-col items-center justify-center text-center">
+          <img src="mobile-img/hero-title.webp" data-hd="mobile-img/hero-title.webp" alt="DESIGN PORTFOLIO" class="animate-blur-fade-up w-full" style="max-width:clamp(350px,65vw,900px);height:auto;margin-bottom:2.5rem" data-delay="500ms" />
+          <div class="animate-blur-fade-up flex flex-wrap items-center gap-3 sm:gap-4" data-delay="600ms">
+            <a href="#projects" class="hero-btn">查看作品集</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="grain-overlay"></div><!-- Gradient fade transition -->
+  <div class="absolute bottom-0 left-0 right-0 h-48 sm:h-64 pointer-events-none" style="background:linear-gradient(to bottom, transparent, #000 100%);z-index:5"></div>
+</section><!-- BGWRAP --><div class="relative" style="background:#000">
+  <div id="sectionBg" class="absolute inset-0 pointer-events-none" style="z-index:0"></div>
+  <script>(function(){var el=document.getElementById("sectionBg");if(!el||!("IntersectionObserver"in window)){if(el)el.style.background="url(mobile-img/section-bg.webp) center top no-repeat";return;}var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){el.style.background="url(mobile-img/section-bg.webp) center top no-repeat";io.disconnect();}});},{rootMargin:"200px"});io.observe(el);})();</script>
+  <div class="absolute inset-0 pointer-events-none" style="background:rgba(8,12,16,0.88);z-index:1"></div>
+  <div class="absolute top-0 left-0 right-0 h-32 pointer-events-none" style="background:linear-gradient(to bottom,#000 0%,transparent 100%);z-index:2"></div>
+  <section id="experience" class="min-h-screen pt-20 sm:pt-28 pb-12 sm:pb-16 overflow-hidden" style="scroll-margin-top:80px;position:relative;z-index:1">
+  <div class="max-w-content mx-auto px-4 sm:px-6 md:px-12">
+    <div class="mx-auto" style="max-width:900px">
+      <div class="animate-blur-fade-up text-center" data-delay="200ms">
+        <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-white leading-tight mb-3">李育昇</h3>
+        <p class="text-base sm:text-lg font-bold text-white/80 mb-5">游戏视觉设计 &amp; AIGC平面设计</p>
+        <p class="text-base sm:text-lg leading-relaxed text-gray-400 max-w-4xl mx-auto">拥有6年平面设计从业经验，4年游戏信息流买量视觉设计，熟悉仙侠、二次元、肉鸽等多品类美术风格；具备较强数据复盘意识，能根据投放结果迭代优化设计思路，沉淀可复用素材资产，适配游戏推广高效投产需求；擅长运用 Midjourney、Stable Diffusion、ComfyUI 等AI工具，将传统视觉设计与前沿AI技术融合，创造更具转化力的视觉作品。</p>
+      </div>
+      <div class="animate-blur-fade-up grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10" data-delay="300ms">
+        <div class="rounded-2xl p-4 border border-white/[0.08] bg-white/[0.06]">
+          <p class="text-xs text-gray-300 uppercase tracking-wider">Email</p>
+          <p class="text-sm text-white/80 mt-1 break-all">992268481@qq.com</p>
+        </div>
+        <div class="rounded-2xl p-4 border border-white/[0.08] bg-white/[0.06]">
+          <p class="text-xs text-gray-300 uppercase tracking-wider">WeChat / Tel</p>
+          <p class="text-sm text-white/80 mt-1">15767787417</p>
+        </div>
+        <div class="rounded-2xl p-4 border border-white/[0.08] bg-white/[0.06]">
+          <p class="text-xs text-gray-300 uppercase tracking-wider">Location</p>
+          <p class="text-sm text-white/80 mt-1">广州</p>
+        </div>
+      </div>
+      <div class="animate-blur-fade-up mt-12" data-delay="350ms">
+        <div class="p-6 sm:p-8 rounded-3xl border border-white/[0.08] bg-white/[0.06]">
+          <h4 id="exp-project" class="text-sm font-medium uppercase tracking-wider text-gray-500 mb-6" style="scroll-margin-top:80px">项目经验</h4>
+          <div class="space-y-8">
+            <div class="relative pl-6 border-l border-white/10">
+              <div class="absolute left-[-4px] top-1.5 w-2 h-2 rounded-full bg-white"></div>
+              <p class="text-sm font-medium text-white">仙侠项目</p>
+              <p class="text-xs text-gray-500/70 mt-0.5">2022 - 2026</p>
+              <p class="text-sm text-gray-400 mt-2 leading-relaxed">全程参与项目四年推广视觉制作，项目图片累计投放消耗3500W+，深度搭建仙侠投放视觉体系，持续迭代风格保证素材长线投放竞争力。</p>
+            </div>
+            <div class="relative pl-6 border-l border-white/10">
+              <div class="absolute left-[-4px] top-1.5 w-2 h-2 rounded-full bg-white/60"></div>
+              <p class="text-sm font-medium text-white">肉鸽项目</p>
+              <p class="text-xs text-gray-500/70 mt-0.5">2024 - 2025</p>
+              <p class="text-sm text-gray-400 mt-2 leading-relaxed">独立负责项目全套包体视觉设计，覆盖icon、登录页、加载页、商店素材、渠道Banner、详情落地页等全部推广物料；其中一个项目在第四轮大规模放量测试期间（三个月左右），个人产出素材累计投放消耗700W+。沉淀10套以上可直接复用迭代的爆款视觉模板，通过AI工具缩短素材制作周期，提升批量投产效率。</p>
+            </div>
+
+<div class="relative pl-6 border-l border-white/10">
+<div class="absolute left-[-4px] top-1.5 w-2 h-2 rounded-full bg-white/60"></div>
+<p class="text-sm font-medium text-white">二次元项目</p>
+<p class="text-xs text-gray-500/70 mt-0.5">2022 - 2026</p>
+<p class="text-sm text-gray-400 mt-2 leading-relaxed">负责二次元赛道多款产品市场推广视觉全流程设计，把控二次元人物立绘、原画氛围、日系二次元投放美术调性，产出人物海报、渠道 Banner、活动弹窗、预约落地页、游戏活动等全套宣传物料。贴合二次元用户审美优化人物光影、角色特写、信息流广告、渠道预约等多投放场景；根据测试数据持续优化角色卖点视觉表达，支撑项目多轮线上放量测试。</p>
+</div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-blur-fade-up mt-8" data-delay="400ms">
+        <div class="p-6 sm:p-8 rounded-3xl border border-white/[0.08] bg-white/[0.06]">
+          <h4 id="exp-work" class="text-sm font-medium uppercase tracking-wider text-gray-500 mb-6" style="scroll-margin-top:80px">工作经历</h4>
+          <div class="space-y-8">
+            <div class="relative pl-6 border-l border-white/10">
+              <div class="absolute left-[-4px] top-1.5 w-2 h-2 rounded-full bg-white"></div>
+              <p class="text-sm font-medium text-white">高热游戏</p>
+              <p class="text-xs text-gray-500 mt-0.5">平面设计 / AIGC平面设计</p>
+              <p class="text-xs text-gray-500/70 mt-0.5">2022.03 - 2026.03</p>
+              <div class="text-sm text-gray-400 mt-2 leading-relaxed space-y-2">
+                <p>1. 对接市场部需求，完成全品类游戏投放广告创意设计，输出Banner、图标、商店图、落地页、登录页等标准化投放物料，适配各大信息流与应用商店渠道规范；</p>
+                <p>2. 独立完成需求对接→创意构思→多版修改→定稿输出全流程，依托投放转化数据反向优化画面构图、人物表现、文案排版，持续提升素材点击率与转化效果；</p>
+                <p>3. 运用AIGC工具辅助设计，通过精准提示词批量生成初稿，筛选后进行精细化修改合成，大幅提升素材产出效率。</p>
+              </div>
+            </div>
+            <div class="relative pl-6 border-l border-white/10">
+              <div class="absolute left-[-4px] top-1.5 w-2 h-2 rounded-full bg-white/60"></div>
+              <p class="text-sm font-medium text-white">广州纵游互娱网络科技有限公司</p>
+              <p class="text-xs text-gray-500 mt-0.5">平面设计</p>
+              <p class="text-xs text-gray-500/70 mt-0.5">2021.10 - 2022.01</p>
+              <div class="text-sm text-gray-400 mt-2 leading-relaxed space-y-2">
+                <p>1. 根据手游产品推广计划，制作广告宣传图、商店素材、UI界面、SDK弹窗、落地页等推广物料；</p>
+                <p>2. 调研各平台热门投放素材，梳理设计流行趋势，产出符合买量逻辑的宣传视觉内容。</p>
+              </div>
+            </div>
+            <div class="relative pl-6 border-l border-white/10">
+              <div class="absolute left-[-4px] top-1.5 w-2 h-2 rounded-full bg-white/60"></div>
+              <p class="text-sm font-medium text-white">广州三羊文化传播有限公司</p>
+              <p class="text-xs text-gray-500 mt-0.5">平面设计</p>
+              <p class="text-xs text-gray-500/70 mt-0.5">2020.04 - 2021.07</p>
+              <div class="text-sm text-gray-400 mt-2 leading-relaxed space-y-2">
+                <p>1. 负责政企单位品牌宣传设计：画册、政策海报、产品手册、地铁灯箱、户外展架、文化墙、活动主KV与现场背景板；</p>
+                <p>2. 跟进设计文件印刷、喷绘、现场安装落地，核对工艺与画面效果，保证设计方案实景还原。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section id="projects" class="pt-24 sm:pt-32 pb-20 sm:pb-28 overflow-hidden" style="scroll-margin-top:80px;position:relative;z-index:1">
+
+  <div class="relative z-10 max-w-content mx-auto px-4 sm:px-6 md:px-12">
+    <!-- Section Label -->
+    <div class="text-center mb-14 md:mb-20">
+      <img loading="lazy" fetchpriority="low" src="mobile-img/section-title.webp" data-hd="mobile-img/section-title.webp" alt="作品案例" class="inline-block w-full" style="max-width:clamp(200px,40vw,500px);height:auto" />
+    </div>
+    <div class="space-y-8 md:space-y-10">
+                                          <!-- Project 01 - ICON 设计 -->
+      <div id="proj-icon" class="animate-blur-fade-up group rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border border-white/[0.08] bg-white/[0.05] p-4 sm:p-6 md:p-8 overflow-hidden hover:border-white/15 transition-all duration-500" data-delay="200ms" style="scroll-margin-top:80px">
+        <div class="flex items-start justify-between mb-6">
+          <div class="flex items-center gap-4 sm:gap-6">
+            <span class="text-7xl sm:text-8xl md:text-9xl font-black leading-none select-none tracking-[-0.05em]" style="color:#f4c081">01</span>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">ICON 设计</h3>
+              <p class="text-sm text-gray-400 mt-1">游戏图标设计 · 圆角ICON系列</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-sm text-gray-500 mb-6 max-w-xl leading-relaxed">
+          为游戏产品设计的高质量ICON作品，涵盖多种风格与品类，注重细节表现与品牌识别度。
+        </p>
+
+                <div class="overflow-x-auto scroll-smooth" id="icon-scroll-wrap" style="scrollbar-width:none;-webkit-overflow-scrolling:touch;position:relative;overflow-y:hidden">
+          <!-- Row 1 -->
+          <div class="flex gap-1.5 sm:gap-2 pb-2 items-center" style="width:max-content;flex-wrap:nowrap">
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon01.webp" data-hd="mobile-img/icon/icon01.webp" alt="ICON 01" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon02.webp" data-hd="mobile-img/icon/icon02.webp" alt="ICON 02" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon03.webp" data-hd="mobile-img/icon/icon03.webp" alt="ICON 03" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon04.webp" data-hd="mobile-img/icon/icon04.webp" alt="ICON 04" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon05.webp" data-hd="mobile-img/icon/icon05.webp" alt="ICON 05" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon06.webp" data-hd="mobile-img/icon/icon06.webp" alt="ICON 06" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon07.webp" data-hd="mobile-img/icon/icon07.webp" alt="ICON 07" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon08.webp" data-hd="mobile-img/icon/icon08.webp" alt="ICON 08" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon09.webp" data-hd="mobile-img/icon/icon09.webp" alt="ICON 09" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon10.webp" data-hd="mobile-img/icon/icon10.webp" alt="ICON 10" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon11.webp" data-hd="mobile-img/icon/icon11.webp" alt="ICON 11" class="lb-img w-full h-full object-cover"  /></div>
+          </div>
+          <!-- Row 2 -->
+          <div class="flex gap-1.5 sm:gap-2 pb-2 items-center" style="width:max-content;flex-wrap:nowrap">
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon12.webp" data-hd="mobile-img/icon/icon12.webp" alt="ICON 12" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon13.webp" data-hd="mobile-img/icon/icon13.webp" alt="ICON 13" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon14.webp" data-hd="mobile-img/icon/icon14.webp" alt="ICON 14" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon15.webp" data-hd="mobile-img/icon/icon15.webp" alt="ICON 15" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon16.webp" data-hd="mobile-img/icon/icon16.webp" alt="ICON 16" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon17.webp" data-hd="mobile-img/icon/icon17.webp" alt="ICON 17" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon18.webp" data-hd="mobile-img/icon/icon18.webp" alt="ICON 18" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon19.webp" data-hd="mobile-img/icon/icon19.webp" alt="ICON 19" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon20.webp" data-hd="mobile-img/icon/icon20.webp" alt="ICON 20" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon21.webp" data-hd="mobile-img/icon/icon21.webp" alt="ICON 21" class="lb-img w-full h-full object-cover"  /></div>
+            <div class="shrink-0 w-[clamp(80px,10vw,140px)] aspect-square rounded-[16px] sm:rounded-[30px] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon22.webp" data-hd="mobile-img/icon/icon22.webp" alt="ICON 22" class="lb-img w-full h-full object-cover"  /></div>
+          </div>
+        </div>
+        <!-- Dots outside scroll -->
+        <div class="flex justify-center items-center gap-1.5 mt-2" id="p2-dots-icon-outer">
+          <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:#ffffff"></div>
+          <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+          <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+          <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+          <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+          <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+          <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+          <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+          <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+          <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+          <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+        </div>                    </div>            <div id="proj-wutu" class="animate-blur-fade-up rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border border-white/[0.08] bg-white/[0.05] p-4 sm:p-6 md:p-8 overflow-hidden hover:border-white/15 transition-all duration-500" data-delay="350ms" style="scroll-margin-top:80px">
+        <div class="flex items-start justify-between mb-6">
+          <div class="flex items-center gap-4 sm:gap-6">
+            <span class="text-7xl sm:text-8xl md:text-9xl font-black leading-none select-none tracking-[-0.05em]" style="color:#f4c081">02</span>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">商店五图</h3>
+              <p class="text-sm text-gray-400 mt-1">游戏商店截图展示</p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-5">
+          <div class="group rounded-2xl border border-white/[0.06] bg-white/[0.015] p-3 sm:p-4 relative">
+            <div class="flex items-center gap-3 mb-2">
+              <img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon11.webp" data-hd="mobile-img/icon/icon11.webp" alt="" class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl object-contain bg-black flex-shrink-0"/>
+              <div><h4 class="font-bold text-white text-sm sm:text-base">口袋苍穹</h4><p class="text-xs text-gray-500 mt-0.5">仙侠游戏</p></div>
+            </div>
+            <div class="scroll-row-wrapper">
+              <div class="flex gap-2 overflow-x-auto scroll-smooth pb-2 items-center" id="p2-row-1" data-dots="p2-dots-1" style="-webkit-overflow-scrolling:touch;scrollbar-width:none">
+                
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/xianxia/1.webp" data-hd="mobile-img/wutu/xianxia/1.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/xianxia/2.webp" data-hd="mobile-img/wutu/xianxia/2.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/xianxia/3.webp" data-hd="mobile-img/wutu/xianxia/3.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/xianxia/4.webp" data-hd="mobile-img/wutu/xianxia/4.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/xianxia/5.webp" data-hd="mobile-img/wutu/xianxia/5.webp" alt="" class="w-full h-full object-cover"  /></div>
+              </div>
+              <div class="flex justify-center items-center gap-1.5 mt-2" id="p2-dots-1">
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+              </div>
+            </div>
+          </div>
+          <div class="group rounded-2xl border border-white/[0.06] bg-white/[0.015] p-3 sm:p-4 relative">
+            <div class="flex items-center gap-3 mb-2">
+              <img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon20.webp" data-hd="mobile-img/icon/icon20.webp" alt="" class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl object-contain bg-black flex-shrink-0"/>
+              <div><h4 class="font-bold text-white text-sm sm:text-base">上古遗迹</h4><p class="text-xs text-gray-500 mt-0.5">仙侠游戏</p></div>
+            </div>
+            <div class="scroll-row-wrapper">
+              <div class="flex gap-2 overflow-x-auto scroll-smooth pb-2 items-center" id="p2-row-2" data-dots="p2-dots-2" style="-webkit-overflow-scrolling:touch;scrollbar-width:none">
+                
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/xianxia/6.webp" data-hd="mobile-img/wutu/xianxia/6.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/xianxia/7.webp" data-hd="mobile-img/wutu/xianxia/7.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/xianxia/8.webp" data-hd="mobile-img/wutu/xianxia/8.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/xianxia/9.webp" data-hd="mobile-img/wutu/xianxia/9.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/xianxia/10.webp" data-hd="mobile-img/wutu/xianxia/10.webp" alt="" class="w-full h-full object-cover"  /></div>
+              </div>
+              <div class="flex justify-center items-center gap-1.5 mt-2" id="p2-dots-2">
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+              </div>
+            </div>
+          </div>
+          <div class="group rounded-2xl border border-white/[0.06] bg-white/[0.015] p-3 sm:p-4 relative">
+            <div class="flex items-center gap-3 mb-2">
+              <img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon05.webp" data-hd="mobile-img/icon/icon05.webp" alt="" class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl object-contain bg-black flex-shrink-0"/>
+              <div><h4 class="font-bold text-white text-sm sm:text-base">奥丘：树海之下</h4><p class="text-xs text-gray-500 mt-0.5">Roguelike游戏</p></div>
+            </div>
+            <div class="scroll-row-wrapper">
+              <div class="flex gap-2 overflow-x-auto scroll-smooth pb-2 items-center" id="p2-row-4" data-dots="p2-dots-4" style="-webkit-overflow-scrolling:touch;scrollbar-width:none">
+                
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/rouge/1.webp" data-hd="mobile-img/wutu/rouge/1.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/rouge/2.webp" data-hd="mobile-img/wutu/rouge/2.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/rouge/3.webp" data-hd="mobile-img/wutu/rouge/3.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/rouge/4.webp" data-hd="mobile-img/wutu/rouge/4.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/rouge/5.webp" data-hd="mobile-img/wutu/rouge/5.webp" alt="" class="w-full h-full object-cover"  /></div>
+              </div>
+              <div class="flex justify-center items-center gap-1.5 mt-2" id="p2-dots-4">
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+              </div>
+            </div>
+          </div>
+          <div class="group rounded-2xl border border-white/[0.06] bg-white/[0.015] p-3 sm:p-4 relative">
+            <div class="flex items-center gap-3 mb-2">
+              <img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon07.webp" data-hd="mobile-img/icon/icon07.webp" alt="" class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl object-contain bg-black flex-shrink-0"/>
+              <div><h4 class="font-bold text-white text-sm sm:text-base">暴击猎人</h4><p class="text-xs text-gray-500 mt-0.5">Roguelike游戏</p></div>
+            </div>
+            <div class="scroll-row-wrapper">
+              <div class="flex gap-2 overflow-x-auto scroll-smooth pb-2 items-center" id="p2-row-5" data-dots="p2-dots-5" style="-webkit-overflow-scrolling:touch;scrollbar-width:none">
+                
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/rouge/6.webp" data-hd="mobile-img/wutu/rouge/6.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/rouge/7.webp" data-hd="mobile-img/wutu/rouge/7.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/rouge/8.webp" data-hd="mobile-img/wutu/rouge/8.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/rouge/9.webp" data-hd="mobile-img/wutu/rouge/9.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 h-[clamp(280px,55vh,700px)] aspect-[9/16] overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/rouge/10.webp" data-hd="mobile-img/wutu/rouge/10.webp" alt="" class="w-full h-full object-cover"  /></div>
+              </div>
+              <div class="flex justify-center items-center gap-1.5 mt-2" id="p2-dots-5">
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+              </div>
+            </div>
+          </div>
+          <div class="group rounded-2xl border border-white/[0.06] bg-white/[0.015] p-3 sm:p-4 relative">
+            <div class="flex items-center gap-3 mb-2">
+              <img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon02.webp" data-hd="mobile-img/icon/icon02.webp" alt="" class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl object-contain bg-black flex-shrink-0"/>
+              <div><h4 class="font-bold text-white text-sm sm:text-base">奇幻梦旅人</h4><p class="text-xs text-gray-500 mt-0.5">二次元游戏</p></div>
+            </div>
+            <div class="scroll-row-wrapper">
+              <div class="flex gap-2 overflow-x-auto scroll-smooth pb-2 items-center" id="p2-row-6" data-dots="p2-dots-6" style="-webkit-overflow-scrolling:touch;scrollbar-width:none">
+                
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/erciyuan/1.webp" data-hd="mobile-img/wutu/erciyuan/1.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/erciyuan/2.webp" data-hd="mobile-img/wutu/erciyuan/2.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/erciyuan/3.webp" data-hd="mobile-img/wutu/erciyuan/3.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/erciyuan/4.webp" data-hd="mobile-img/wutu/erciyuan/4.webp" alt="" class="w-full h-full object-cover"  /></div>
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/erciyuan/5.webp" data-hd="mobile-img/wutu/erciyuan/5.webp" alt="" class="w-full h-full object-cover"  /></div>
+              </div>
+              <div class="flex justify-center items-center gap-1.5 mt-2" id="p2-dots-6">
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+              </div>
+            </div>
+          </div>
+          <div class="group rounded-2xl border border-white/[0.06] bg-white/[0.015] p-3 sm:p-4 relative">
+            <div class="flex items-center gap-3 mb-2">
+              <img loading="lazy" fetchpriority="low" src="mobile-img/icon/icon01.webp" data-hd="mobile-img/icon/icon01.webp" alt="" class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl object-contain bg-black flex-shrink-0"/>
+              <div><h4 class="font-bold text-white text-sm sm:text-base">镇魂街：破晓</h4><p class="text-xs text-gray-500 mt-0.5">二次元游戏</p></div>
+            </div>
+            <div class="scroll-row-wrapper">
+              <div class="flex gap-2 overflow-x-auto scroll-smooth pb-2 items-center" id="p2-row-7" data-dots="p2-dots-7" style="-webkit-overflow-scrolling:touch;scrollbar-width:none">
+                
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/erciyuan/6.webp" data-hd="mobile-img/wutu/erciyuan/6.webp" alt="" class="w-full h-full object-contain bg-black"  /></div>
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/erciyuan/7.webp" data-hd="mobile-img/wutu/erciyuan/7.webp" alt="" class="w-full h-full object-contain bg-black"  /></div>
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/erciyuan/8.webp" data-hd="mobile-img/wutu/erciyuan/8.webp" alt="" class="w-full h-full object-contain bg-black"  /></div>
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/erciyuan/9.webp" data-hd="mobile-img/wutu/erciyuan/9.webp" alt="" class="w-full h-full object-contain bg-black"  /></div>
+                <div class="shrink-0 w-[clamp(280px,42vw,480px)] aspect-video overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" src="mobile-img/wutu/erciyuan/10.webp" data-hd="mobile-img/wutu/erciyuan/10.webp" alt="" class="w-full h-full object-contain bg-black"  /></div>
+              </div>
+              <div class="flex justify-center items-center gap-1.5 mt-2" id="p2-dots-7">
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+                <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+                  <!-- Project 03 -->
+      <div id="proj-luodiye" class="group rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border border-white/[0.08] bg-white/[0.05] p-4 sm:p-6 md:p-8 overflow-hidden hover:border-white/15 transition-all duration-500" style="scroll-margin-top:80px">
+        <div class="flex items-start justify-between mb-6">
+          <div class="flex items-center gap-4 sm:gap-6">
+            <span class="text-7xl sm:text-8xl md:text-9xl font-black leading-none select-none tracking-[-0.05em]" style="color:#f4c081">03</span>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">落地页展示</h3>
+              <p class="text-sm text-gray-400 mt-1">游戏产品落地页设计，确保下载转化效果。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-row-wrapper">
+          <div class="flex gap-2 overflow-x-auto scroll-smooth pb-2 items-start" id="p3-row-1" data-dots="p3-dots-1" style="-webkit-overflow-scrolling:touch;scrollbar-width:none">
+                <div class="shrink-0 w-[clamp(120px,13vw,170px)] aspect-[750/1550] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" class="lb-img w-full h-full object-cover object-top bg-black" src="mobile-img/luodiye/1.webp" data-hd="mobile-img/luodiye/1.webp" alt=""  /></div>
+                <div class="shrink-0 w-[clamp(120px,13vw,170px)] aspect-[750/1550] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" class="lb-img w-full h-full object-cover object-top bg-black" src="mobile-img/luodiye/2.webp" data-hd="mobile-img/luodiye/2.webp" alt=""  /></div>
+                <div class="shrink-0 w-[clamp(120px,13vw,170px)] aspect-[750/1550] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" class="lb-img w-full h-full object-cover object-top bg-black" src="mobile-img/luodiye/4.webp" data-hd="mobile-img/luodiye/4.webp" alt=""  /></div>
+                <div class="shrink-0 w-[clamp(120px,13vw,170px)] aspect-[750/1550] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" class="lb-img w-full h-full object-cover object-top bg-black" src="mobile-img/luodiye/5.webp" data-hd="mobile-img/luodiye/5.webp" alt=""  /></div>
+                <div class="shrink-0 w-[clamp(120px,13vw,170px)] aspect-[750/1550] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" class="lb-img w-full h-full object-cover object-top bg-black" src="mobile-img/luodiye/6.webp" data-hd="mobile-img/luodiye/6.webp" alt=""  /></div>
+                <div class="shrink-0 w-[clamp(120px,13vw,170px)] aspect-[750/1550] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" class="lb-img w-full h-full object-cover object-top bg-black" src="mobile-img/luodiye/7.webp" data-hd="mobile-img/luodiye/7.webp" alt=""  /></div>
+                <div class="shrink-0 w-[clamp(120px,13vw,170px)] aspect-[750/1550] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" class="lb-img w-full h-full object-cover object-top bg-black" src="mobile-img/luodiye/8_opt.webp" data-hd="mobile-img/luodiye/8_opt.webp" alt=""  /></div>
+                <div class="shrink-0 w-[clamp(120px,13vw,170px)] aspect-[750/1550] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" class="lb-img w-full h-full object-cover object-top bg-black" src="mobile-img/luodiye/9.webp" data-hd="mobile-img/luodiye/9.webp" alt=""  /></div>
+                <div class="shrink-0 w-[clamp(120px,13vw,170px)] aspect-[750/1550] overflow-hidden bg-black"><img loading="lazy" fetchpriority="low" class="lb-img w-full h-full object-cover object-top bg-black" src="mobile-img/luodiye/10.webp" data-hd="mobile-img/luodiye/10.webp" alt=""  /></div>
+          </div>
+          <div class="flex justify-center items-center gap-1.5 mt-2" id="p3-dots-1">
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15)"></div>
+          </div>
+        </div>
+      </div><!-- Project 04 - 广告展示 -->
+      <div id="proj-guanggao" class="group rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border border-white/[0.08] bg-white/[0.05] p-4 sm:p-6 md:p-8 overflow-hidden hover:border-white/15 transition-all duration-500" data-delay="600ms" style="scroll-margin-top:80px">
+        <div class="flex items-start justify-between mb-6">
+          <div class="flex items-center gap-4 sm:gap-6">
+            <span class="text-7xl sm:text-8xl md:text-9xl font-black leading-none select-none tracking-[-0.05em]" style="color:#f4c081">04</span>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">广告素材展示</h3>
+              <p class="text-sm text-gray-400 mt-1">游戏广告素材 · 投放视觉设计</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-sm text-gray-500 mb-6 max-w-xl leading-relaxed">游戏广告创意素材设计，涵盖Banner、插屏、原生广告等多样化投放形式。</p>
+        <div class="overflow-x-auto scroll-smooth" id="guanggao-scroll-wrap" style="scrollbar-width:none;-webkit-overflow-scrolling:touch;position:relative;overflow-y:hidden">
+          <!-- Row 1 -->
+          <div class="flex gap-3 sm:gap-4 pb-2 items-center" style="width:max-content;flex-wrap:nowrap">
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/1.webp" data-hd="mobile-img/g2/1.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/2.webp" data-hd="mobile-img/g2/2.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/3.webp" data-hd="mobile-img/g2/3.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/4.webp" data-hd="mobile-img/g2/4.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/5.webp" data-hd="mobile-img/g2/5.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/6.webp" data-hd="mobile-img/g2/6.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/7.webp" data-hd="mobile-img/g2/7.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/8.webp" data-hd="mobile-img/g2/8.webp" alt=""  /></div></div>
+          </div>
+          <!-- Row 2 -->
+          <div class="flex gap-3 sm:gap-4 pb-2 items-center" style="width:max-content;flex-wrap:nowrap">
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/9.webp" data-hd="mobile-img/g2/9.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/10.webp" data-hd="mobile-img/g2/10.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/11.webp" data-hd="mobile-img/g2/11.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/12.webp" data-hd="mobile-img/g2/12.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/13.webp" data-hd="mobile-img/g2/13.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/14.webp" data-hd="mobile-img/g2/14.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/15.webp" data-hd="mobile-img/g2/15.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/16.webp" data-hd="mobile-img/g2/16.webp" alt=""  /></div></div>
+          </div>
+          <!-- Row 3 -->
+          <div class="flex gap-3 sm:gap-4 pb-2 items-center" style="width:max-content;flex-wrap:nowrap">
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/17.webp" data-hd="mobile-img/g2/17.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/18.webp" data-hd="mobile-img/g2/18.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/19.webp" data-hd="mobile-img/g2/19.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/20.webp" data-hd="mobile-img/g2/20.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/21.webp" data-hd="mobile-img/g2/21.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/22.webp" data-hd="mobile-img/g2/22.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/23.webp" data-hd="mobile-img/g2/23.webp" alt=""  /></div></div>
+            <div class="guanggao-card" style="flex-shrink:0;width:clamp(200px,28vw,380px);min-width:200px;transform:translateZ(0);overflow:hidden;border-radius:12px;background:#000"><div style="width:100%;overflow:hidden;aspect-ratio:16/9;border-radius:12px"><img loading="lazy" class="lb-img" style="display:block!important;width:100%!important;height:100%!important;object-fit:cover!important" src="mobile-img/g2/24.webp" data-hd="mobile-img/g2/24.webp" alt=""  /></div></div>
+          </div>
+        </div>
+        <!-- Dots outside scroll -->
+        <div class="flex justify-center items-center gap-1.5 mt-2" id="p2-dots-guanggao-outer">
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:#ffffff;width:1.2rem"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15);width:0.5rem"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15);width:0.5rem"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15);width:0.5rem"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15);width:0.5rem"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15);width:0.5rem"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15);width:0.5rem"></div>
+            <div class="w-2 h-2 rounded-full transition-all duration-300" style="background:rgba(255,255,255,0.15);width:0.5rem"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox-overlay" id="lightbox">
+  <button class="lb-close" id="lbClose">&#10005;</button>
+  <button class="lb-nav lb-prev" id="lbPrev">&#8249;</button>
+  <img id="lbImage" src="" alt="" />
+  <button class="lb-nav lb-next" id="lbNext">&#8250;</button>
+  <div class="lb-counter" id="lbCounter"></div>
+</div>
+
+<section id="contact" class="min-h-screen flex flex-col items-center justify-center overflow-hidden py-8" style="scroll-margin-top:80px;position:relative;z-index:1">
+
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full" style="background:radial-gradient(circle,rgba(255,255,255,0.03) 0%,transparent 70%)"></div>
+    <div class="absolute top-0 left-0 right-0 h-[1px]" style="background:linear-gradient(90deg,transparent,rgba(255,255,255,0.1),transparent)"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-[1px]" style="background:linear-gradient(90deg,transparent,rgba(255,255,255,0.1),transparent)"></div>
+  </div>
+  <div class="relative z-10 max-w-content mx-auto px-4 sm:px-6 md:px-12 w-full text-center pt-8 sm:pt-0">
+    <div class="animate-blur-fade-up" data-delay="200ms">
+          <div class="text-center mb-24">
+            <img loading="lazy" fetchpriority="low" src="mobile-img/contact-title.webp" data-hd="mobile-img/contact-title.webp" alt="关于我" class="inline-block w-full" style="max-width:clamp(200px,40vw,500px);height:auto" />
+          </div>
+          <div class="mb-16 mt-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8 justify-items-center">
+      <div class="animate-blur-fade-up group rounded-2xl sm:rounded-3xl border border-white/[0.08] bg-white/[0.06] p-5 sm:p-6 md:p-8 hover:-translate-y-1 transition-all duration-500" data-delay="200ms">
+        <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-[12px] sm:rounded-[16px] overflow-hidden bg-black flex items-center justify-center mb-4 sm:mb-5">
+          <img loading="lazy" fetchpriority="low" src="mobile-img/skills-icons/1.webp" data-hd="mobile-img/skills-icons/1.webp" alt="视觉设计" class="w-full h-full object-cover" />
+        </div>
+        <h3 class="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3 text-center">视觉设计</h3>
+        <p class="text-xs sm:text-sm text-gray-400 leading-relaxed text-center">游戏广告创意设计、Banner、图标、商店图、落地页等标准化投放物料</p>
+      </div>
+      <div class="animate-blur-fade-up group rounded-2xl sm:rounded-3xl border border-white/[0.08] bg-white/[0.06] p-5 sm:p-6 md:p-8 hover:-translate-y-1 transition-all duration-500" data-delay="300ms">
+        <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-[12px] sm:rounded-[16px] overflow-hidden bg-black flex items-center justify-center mb-4 sm:mb-5">
+          <img loading="lazy" fetchpriority="low" src="mobile-img/skills-icons/2.webp" data-hd="mobile-img/skills-icons/2.webp" alt="AI辅助设计" class="w-full h-full object-cover" />
+        </div>
+        <h3 class="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3 text-center">AI辅助设计</h3>
+        <p class="text-xs sm:text-sm text-gray-400 leading-relaxed text-center">Midjourney、Stable Diffusion、ComfyUI等AI工具融合设计流程</p>
+      </div>
+      <div class="animate-blur-fade-up group rounded-2xl sm:rounded-3xl border border-white/[0.08] bg-white/[0.06] p-5 sm:p-6 md:p-8 hover:-translate-y-1 transition-all duration-500" data-delay="400ms">
+        <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-[12px] sm:rounded-[16px] overflow-hidden bg-black flex items-center justify-center mb-4 sm:mb-5">
+          <img loading="lazy" fetchpriority="low" src="mobile-img/skills-icons/3.webp" data-hd="mobile-img/skills-icons/3.webp" alt="游戏UI设计" class="w-full h-full object-cover" />
+        </div>
+        <h3 class="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3 text-center">游戏UI设计</h3>
+        <p class="text-xs sm:text-sm text-gray-400 leading-relaxed text-center">游戏界面设计、SDK设计、加载页、登录页等游戏相关视觉设计</p>
+      </div>
+      <div class="animate-blur-fade-up group rounded-2xl sm:rounded-3xl border border-white/[0.08] bg-white/[0.06] p-5 sm:p-6 md:p-8 hover:-translate-y-1 transition-all duration-500" data-delay="500ms">
+        <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-[12px] sm:rounded-[16px] overflow-hidden bg-black flex items-center justify-center mb-4 sm:mb-5">
+          <img loading="lazy" fetchpriority="low" src="mobile-img/skills-icons/4.webp" data-hd="mobile-img/skills-icons/4.webp" alt="提示词工程" class="w-full h-full object-cover" />
+        </div>
+        <h3 class="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3 text-center">提示词工程</h3>
+        <p class="text-xs sm:text-sm text-gray-400 leading-relaxed text-center">精准Prompt优化能力，高效生成与筛选高质量的AI视觉素材</p>
+      </div>
+      </div>
+    </div>
+    <h2 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-[-0.03em] leading-[1.1] mb-4 sm:mb-6">Let's Create Together</h2>
+      <p class="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto mb-8 sm:mb-12">不论你是需要游戏广告素材、品牌视觉设计，还是想探索AI辅助设计的无限可能，我都很乐意与你合作</p>
+    </div>
+    
+    <div class="animate-blur-fade-up flex flex-wrap justify-center gap-8 mt-16" data-delay="500ms">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-white/60"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+        <div class="text-left"><p class="text-xs text-gray-300 uppercase tracking-wider">Email</p><p class="text-sm text-white/90">992268481@qq.com</p></div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-white/60"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <div class="text-left"><p class="text-xs text-gray-300 uppercase tracking-wider">WeChat / Tel</p><p class="text-sm text-white/90">15767787417</p></div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-white/60"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="text-left"><p class="text-xs text-gray-300 uppercase tracking-wider">Location</p><p class="text-sm text-white/70">广州</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+</div><!-- /BGWRAP --><script>
+function showDropdown(el) {
+  var menu = el.parentNode.querySelector('.dropdown-menu');
+  if(menu) menu.classList.add('show');
+}
+function hideDropdown(el) {
+  var menu = el.parentNode.querySelector('.dropdown-menu');
+  if(menu) menu.classList.remove('show');
+}
+function toggleMobile(){var m=document.getElementById("mobMenu"),o=document.getElementById("hamOpen"),c=document.getElementById("hamClose");if(m.style.display==="block"){m.style.display="none";o.style.display="block";c.style.display="none"}else{m.style.display="block";o.style.display="none";c.style.display="block"}}
+function closeMobile(){var m=document.getElementById("mobMenu"),o=document.getElementById("hamOpen"),c=document.getElementById("hamClose");m.style.display="none";o.style.display="block";c.style.display="none"}
+var animObserver=new IntersectionObserver(function(e){e.forEach(function(en){if(en.isIntersecting){var d=en.target.getAttribute('data-delay');if(d)en.target.style.animationDelay=d;en.target.classList.add('anim-active');animObserver.unobserve(en.target)}})},{threshold:0.05});document.querySelectorAll('.animate-blur-fade-up').forEach(function(el){animObserver.observe(el)});
+// Mouse wheel horizontal scroll for P2 rows
+document.querySelectorAll('.scroll-row-wrapper').forEach(function(w){
+  w.addEventListener('wheel', function(e){
+    var row = w.querySelector('[id^="p2-row-"],[id^="p3-row-"]');
+    if(row){
+      e.preventDefault();
+      row.scrollLeft += e.deltaY * 1.5;
+    }
+  }, {passive: false});
+});
+window.addEventListener("scroll",function(){var sy=window.scrollY,n=document.getElementById("navbar");if(n){if(sy>50){n.style.background="#000000";n.style.backdropFilter="blur(0px)";n.style.webkitBackdropFilter="blur(0px)"}else{n.style.background="rgba(10,10,15,0.12)";n.style.backdropFilter="blur(24px)";n.style.webkitBackdropFilter="blur(24px)"}}var secs=["home","experience","projects","skills","contact"],active="home";for(var i=secs.length-1;i>=0;i--){var se=document.getElementById(secs[i]);if(se){var r=se.getBoundingClientRect();if(r.top<=200){active=secs[i];break}}}var links=document.querySelectorAll(".nav-link");for(var i=0;i<links.length;i++){var l=links[i],t=l.getAttribute("data-target");if(t===active){l.classList.add("active");l.style.color="#ffffff"}else{l.classList.remove("active");l.style.color="#8899aa"}}});
+
+</script>
+
+<script>
+
+// Infinite scroll for Project 01
+(function(){
+  var section = document.getElementById('projects');
+  if (!section) return;
+  // Mobile: skip cloning and animation to avoid duplicate downloads
+  if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+  var tracks = section.querySelectorAll('.scroll-track, [data-speed]');
+  if (!tracks.length) return;
+
+  var positions = [];
+  var animId = null;
+  var running = false;
+
+  // Clone items (desktop only)
+  tracks.forEach(function(track, i){
+    // If this is a p2-row (native scroll), disable native scroll for animation
+    if (track.id && track.id.indexOf('row-') >= 0) {
+      track.style.overflowX = 'visible';
+    }
+    var items = Array.from(track.children);
+    items.forEach(function(child){ track.appendChild(child.cloneNode(true)); });
+    positions[i] = 0;
+  });
+
+  function step() {
+    if (!running) return;
+    tracks.forEach(function(track, i){
+      var speed = parseFloat(track.getAttribute('data-speed')) || 0.8;
+      var halfW = track.scrollWidth / 2;
+      if (halfW <= 0) return;
+      positions[i] -= speed * 0.5;
+      if (Math.abs(positions[i]) >= halfW) positions[i] = 0;
+      track.style.transform = 'translate3d(' + positions[i] + 'px, 0, 0)';
+    });
+    animId = requestAnimationFrame(step);
+  }
+
+  function start() {
+    if (running) return;
+    running = true;
+    animId = requestAnimationFrame(step);
+  }
+  window.__scrollAnimStart = start;
+  window.__scrollAnimStop = stop;
+
+  function stop() {
+    running = false;
+    if (animId) { cancelAnimationFrame(animId); animId = null; }
+  }
+
+  tracks.forEach(function(t){
+    t.addEventListener('mouseenter', stop);
+    t.addEventListener('mouseleave', start);
+  });
+
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) start();
+      else stop();
+    });
+  }, { threshold: 0.15 });
+  obs.observe(section);
+})();
+// Lightbox
+(function(){
+  var overlay = document.getElementById('lightbox');
+  var img = document.getElementById('lbImage');
+  var counter = document.getElementById('lbCounter');
+  var closeBtn = document.getElementById('lbClose');
+  var prevBtn = document.getElementById('lbPrev');
+  var nextBtn = document.getElementById('lbNext');
+  var currentImgs = [];
+  var currentIdx = 0;
+  
+  window.__openLightbox = function(clickedImg) {
+    if (window.__scrollAnimStop) window.__scrollAnimStop();
+    currentImgs = Array.from(document.querySelectorAll('.lb-img'));
+    currentIdx = currentImgs.indexOf(clickedImg);
+    if (currentIdx < 0) currentIdx = 0;
+    img.src = clickedImg.getAttribute('src');
+    img.alt = clickedImg.getAttribute('alt') || '';
+    if (counter) counter.textContent = (currentIdx + 1) + ' / ' + currentImgs.length;
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function showImage() {
+    if (!currentImgs.length) return;
+    var el = currentImgs[currentIdx];
+    img.src = el.getAttribute('src');
+    img.alt = el.getAttribute('alt') || '';
+    if (counter) counter.textContent = (currentIdx + 1) + ' / ' + currentImgs.length;
+  }
+  
+  function closeLightbox() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+    if (window.__scrollAnimStart) window.__scrollAnimStart();
+  }
+  
+  function prevImage() {
+    if (currentImgs.length) {
+      currentIdx = (currentIdx - 1 + currentImgs.length) % currentImgs.length;
+      showImage();
+    }
+  }
+  
+  function nextImage() {
+    if (currentImgs.length) {
+      currentIdx = (currentIdx + 1) % currentImgs.length;
+      showImage();
+    }
+  }
+  
+  // Click handled by global delegation below
+  closeBtn.addEventListener('click', closeLightbox);
+  prevBtn.addEventListener('click', prevImage);
+  nextBtn.addEventListener('click', nextImage);
+  overlay.addEventListener('click', function(e){ if (e.target === overlay) closeLightbox(); });
+  document.addEventListener('keydown', function(e){
+    if (!overlay.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') prevImage();
+    if (e.key === 'ArrowRight') nextImage();
+  });
+  var touchStartX = 0, touchEndX = 0;
+  overlay.addEventListener('touchstart', function(e){
+    if (e.target === overlay || e.target === img) { touchStartX = e.changedTouches[0].screenX; }
+  }, { passive: true });
+  overlay.addEventListener('touchend', function(e){
+    if (touchStartX === 0) return;
+    touchEndX = e.changedTouches[0].screenX;
+    var diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 40) { if (diff > 0) nextImage(); else prevImage(); }
+    touchStartX = 0;
+  }, { passive: true });
+})();
+// Global delegation for lb-img (handles clones too)
+document.addEventListener('click', function(e){
+  var target = e.target.closest('.lb-img');
+  if (target && window.__openLightbox) {
+    window.__openLightbox(target);
+  }
+});
+
+</script>
+
+
+
+<script>
+// P2 manual scroll with progress dots
+(function(){
+  var rows = document.querySelectorAll('[id^="p2-row-"],[id^="p3-row-"]');
+  rows.forEach(function(row){
+    var idx = row.id.replace(/p[23]-row-/, '');
+    var prefix = row.id.match(/^(p[23])-/)[1]; var dotsEl = document.getElementById(prefix + '-dots-' + idx);
+    if(!dotsEl) return;
+    var items = row.querySelectorAll(':scope > div');
+    var wrapper = row.parentElement;
+    wrapper.style.position = 'relative';
+    
+    function makeArrow(svg, dir){
+      var btn = document.createElement('button');
+      btn.innerHTML = svg;
+      btn.style.cssText = 'position:absolute;top:50%;transform:translateY(-50%);z-index:10;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.5);color:#fff;border:1px solid rgba(255,255,255,0.1);cursor:pointer;opacity:0;transition:opacity 0.3s';
+      btn.style[dir] = '4px';
+      wrapper.appendChild(btn);
+      return btn;
+    }
+    
+    var leftBtn = makeArrow('<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>', 'left');
+    var rightBtn = makeArrow('<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>', 'right');
+    
+    leftBtn.addEventListener('click', function(e){ e.stopPropagation(); var w = items[0].offsetWidth + 8; row.scrollBy({left: -w, behavior:'smooth'}); });
+    rightBtn.addEventListener('click', function(e){ e.stopPropagation(); var w = items[0].offsetWidth + 8; row.scrollBy({left: w, behavior:'smooth'}); });
+    
+    wrapper.addEventListener('mouseenter', function(){ leftBtn.style.opacity='1'; rightBtn.style.opacity='1'; });
+    wrapper.addEventListener('mouseleave', function(){ leftBtn.style.opacity='0'; rightBtn.style.opacity='0'; });
+    
+    function updateDots(){
+      var scrollLeft = row.scrollLeft;
+      var maxScroll = row.scrollWidth - row.clientWidth;
+      if(maxScroll <= 0){
+        var dots = dotsEl.querySelectorAll('div');
+        dots.forEach(function(d,i){ d.style.background = i===0?'#ffffff':'rgba(255,255,255,0.15)'; d.style.width = i===0?'1.2rem':'0.5rem'; });
+        return;
+      }
+      var progress = scrollLeft / maxScroll;
+      var activeIdx = Math.round(progress * (items.length - 1));
+      if(activeIdx >= items.length) activeIdx = items.length - 1;
+      if(activeIdx < 0) activeIdx = 0;
+      var dots = dotsEl.querySelectorAll('div');
+      dots.forEach(function(d,i){
+        d.style.background = i <= activeIdx ? '#ffffff' : 'rgba(255,255,255,0.15)';
+        d.style.width = i === activeIdx ? '1.2rem' : '0.5rem';
+      });
+    }
+    
+    row.addEventListener('scroll', updateDots);
+    setTimeout(updateDots, 200);
+  });
+})();
+</script>
+
+<script>
+// 五图长按拖拽滚动
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('[id^="p2-row-"],[id^="p3-row-"]').forEach(function(container) {
+    var isDown = false;
+    var startX, scrollLeft;
+    var moved = false;
+
+    container.addEventListener("mousedown", function(e) {
+      isDown = true;
+      moved = false;
+      startX = e.pageX - container.offsetLeft;
+      scrollLeft = container.scrollLeft;
+      container.style.cursor = "grabbing";
+      container.style.userSelect = "none";
+      e.preventDefault();
+    });
+
+    container.addEventListener("mousemove", function(e) {
+      if (!isDown) return;
+      e.preventDefault();
+      var x = e.pageX - container.offsetLeft;
+      var walk = (x - startX) * 1;
+      container.scrollLeft = scrollLeft - walk;
+      if (Math.abs(x - startX) > 3) moved = true;
+    });
+
+    container.addEventListener("mouseup", function() {
+      isDown = false;
+      container.style.cursor = "";
+      container.style.userSelect = "";
+    });
+
+    container.addEventListener("mouseleave", function() {
+      isDown = false;
+      container.style.cursor = "";
+      container.style.userSelect = "";
+    });
+  });
+});
+</script>
+
+<script>
+(function(){
+if(!window.matchMedia("(hover: hover) and (pointer: fine)").matches)return;
+var imgs=document.querySelectorAll('img[data-hd]');
+imgs.forEach(function(img){img.src=img.getAttribute('data-hd');img.removeAttribute('data-hd');});
+})();
+</script>
+
+
+
+
+<script>
+(function(){var w=document.getElementById("icon-scroll-wrap"),d=document.getElementById("p2-dots-icon-outer");if(!w||!d)return;var o=d.querySelectorAll("div");if(!o.length)return;function u(){var m=w.scrollWidth-w.clientWidth;if(m<=0){o.forEach(function(d,i){d.style.background=i===0?"#ffffff":"rgba(255,255,255,0.15)";d.style.width=i===0?"1.2rem":"0.5rem"});return}var p=w.scrollLeft/m,a=Math.round(p*(o.length-1));if(a>=o.length)a=o.length-1;if(a<0)a=0;o.forEach(function(d,i){d.style.background=i<=a?"#ffffff":"rgba(255,255,255,0.15)";d.style.width=i===a?"1.2rem":"0.5rem"})}w.addEventListener("scroll",u,{passive:true});setTimeout(u,300)})();
+(function(){var w=document.getElementById("icon-scroll-wrap");if(!w)return;var d=false,s,x;w.addEventListener("mousedown",function(e){d=true;s=e.pageX-w.offsetLeft;x=w.scrollLeft;w.style.cursor="grabbing";w.style.userSelect="none";e.preventDefault()});w.addEventListener("mousemove",function(e){if(!d)return;e.preventDefault();w.scrollLeft=x-(e.pageX-w.offsetLeft-s)});w.addEventListener("mouseup",function(){d=false;w.style.cursor="";w.style.userSelect=""});w.addEventListener("mouseleave",function(){d=false;w.style.cursor="";w.style.userSelect=""});w.addEventListener("wheel",function(e){if(Math.abs(e.deltaX)>Math.abs(e.deltaY))return;e.preventDefault();w.scrollLeft+=e.deltaY},{passive:false})})();
+(function(){var w=document.getElementById("guanggao-scroll-wrap"),d=document.getElementById("p2-dots-guanggao-outer");if(!w||!d)return;var o=d.querySelectorAll("div");if(!o.length)return;function u(){var m=w.scrollWidth-w.clientWidth;if(m<=0){o.forEach(function(d,i){d.style.background=i===0?"#ffffff":"rgba(255,255,255,0.15)";d.style.width=i===0?"1.2rem":"0.5rem"});return}var p=w.scrollLeft/m,a=Math.round(p*(o.length-1));if(a>=o.length)a=o.length-1;if(a<0)a=0;o.forEach(function(d,i){d.style.background=i<=a?"#ffffff":"rgba(255,255,255,0.15)";d.style.width=i===a?"1.2rem":"0.5rem"})}w.addEventListener("scroll",u,{passive:true});setTimeout(u,300)})();
+(function(){var w=document.getElementById("guanggao-scroll-wrap");if(!w)return;var d=false,s,x;w.addEventListener("mousedown",function(e){d=true;s=e.pageX-w.offsetLeft;x=w.scrollLeft;w.style.cursor="grabbing";w.style.userSelect="none";e.preventDefault()});w.addEventListener("mousemove",function(e){if(!d)return;e.preventDefault();w.scrollLeft=x-(e.pageX-w.offsetLeft-s)});w.addEventListener("mouseup",function(){d=false;w.style.cursor="";w.style.userSelect=""});w.addEventListener("mouseleave",function(){d=false;w.style.cursor="";w.style.userSelect=""});w.addEventListener("wheel",function(e){if(Math.abs(e.deltaX)>Math.abs(e.deltaY))return;e.preventDefault();w.scrollLeft+=e.deltaY},{passive:false})})();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
